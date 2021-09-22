@@ -1,0 +1,60 @@
+/* Comentário */
+
+/* formatação que é aplicada a todas os elementos */
+* {
+    font-family: Verdana;
+    font-size: 14pt;
+}
+p{
+    font-family: "Courier New";
+}
+
+/* estilo individual - id é único, e deve ser usado uma única vez*/
+#principal{
+    width: 900px;
+    margin: 0 auto;
+}
+/*define uma formatação para um conjunto de elementos, classes, estilos individuais*/
+strong, mark, em{
+    background-color: aqua;
+}
+
+/*hierarquia de elementos direta*/
+nav>ul>li{
+    list-style-type: none; /*retira o marcador da lista*/
+    display: inline-block; /*altera a visualização do elemento que está como bloco para inline-bloco - possível alterar altura e largura*/
+    margin: 15px;  /*espaçamento entre elementos*/
+}
+/*hierarquia de elementos indireta */
+li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*pseudo-classes*/
+a:link{
+    /*alterar atributos do link*/
+    font-family: Georgia;
+}
+a:visited{
+    /*alterar atributos do link já visitado*/
+    color: green;
+}
+li>a:hover{
+    /*alterar atributos qdo passar o mouse no link*/
+    background-color: lightslategray;
+    font-size: 18pt;
+}
+img:hover{
+    width: 150%;
+    height: 100%;
+}
+nav{
+    background-color: yellow;
+    padding: 10px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
