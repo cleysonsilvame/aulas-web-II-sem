@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo css incorporado</title>
+    <style>/* estilo incorporado*/
+        section{
+            margin: 0 auto;
+            width: 400px;
+            background-color: azure;
+        }
+        h2, h3{
+            color: magenta;
+            text-decoration: underline;
+            font-size: 20pt;
+            font-weight: normal; /*define o espessura do negrito*/
+            font-family: "Courier New";
+        }
+        .destaque{
+            background-color: lightgreen;
+            color: orange;
+        }
+        p{
+            color: blue !important; 
+        }
+    </style>
+    <link rel="stylesheet" href="css/externo.css">
+</head>
+<body>
+    <section> 
+        <header>
+            <h2>Exemplo de css incorporado</h2>
+        </header>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, vel blanditiis? Explicabo voluptatem, vel, nam perferendis totam similique vitae eum voluptas nulla iure neque animi architecto voluptates molestias rem! <span class="destaque">Consequuntur?</span></p>
+        <article>
+            <header>
+                <h3>Sub-titulo do conteúdo</h3>
+            </header>
+            Lorem ipsum <span class="destaque">dolor sit amet consectetur</span> adipisicing elit. Itaque repudiandae iure distinctio nulla, accusamus nihil doloribus pariatur fuga quis ex, asperiores cumque porro est? Tenetur explicabo consectetur impedit quisquam! Neque?
+            <p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Unde labore magni animi enim amet dolores a nostrum reprehenderit ad in.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at minima facilis, <em>vel sed</em> facere culpa, suscipit animi commodi iure illum dignissimos aut excepturi fugiat maxime amet, quos sit itaque!</p>
+        </article>
+        <article style="border: 2px dashed blue; height: 60px; width: 200px; text-align: center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, recusandae.
+        </article>
+
+    </section>
+
+    
+</body>
+</html>

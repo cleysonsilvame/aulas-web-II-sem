@@ -1,0 +1,41 @@
+/* Comentário */
+
+/* propriedade: valor; */
+
+/* formatação para qualquer elemento html */
+
+p {
+    color: #ff04af; /* propriedade cor da fonte */
+    font-family: "Tahoma"; /* define o tipo da fonte */
+}
+
+header{
+    background-color: lightblue; /* cor de fundo */
+    text-align: center; /* alinhamento do texto*/
+    margin: 50px; /* espaçamento externo do elemento*/
+}
+
+body{
+    margin: 0;
+}
+/* formatação para qualquer elemento - classes 
+.nomeclasse{
+    lista de propriedades
+}
+*/
+.fonte{
+    color: red;
+    font-size: 18pt; /* tamanho da fonte */
+}
+
+/* formatação aplicada uma única vez - estilo individual 
+#nomeestiloindividual{
+    lista de propriedades
+}
+*/
+#principal{
+    width: 900px; /*define a largura do elemento */
+    margin: 0 auto; /* centralizar o elemento no navegador */
+    border: 1px solid darkgreen; /* definir as propriedades da borda */
+    padding: 10px; /*espaçamento entre o conteúdo e a borda de todoso os lados*/
+}
