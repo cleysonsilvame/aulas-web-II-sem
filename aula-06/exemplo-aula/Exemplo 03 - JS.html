@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0204)https://alt-5d152e0e8981d.blackboard.com/bbcswebdav/pid-10107696-dt-content-rid-132295149_1/courses/1465375/exemplo03.html?one_hash=FF234D0B25EB92FF936D4DF5ED537BDE&f_hash=DCBD8C22633DF05862CBE9EA9E9747A9 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03 - JS</title>
+    <script>
+        //entrada de dados = prompt
+        "use strict"; 
+        //modo tradicional - var
+        var n1, n2;
+        
+        n1 = prompt("Digite um número");
+        //toda a entrada de dados via prompt será texto
+        //converte de texto para número
+        n1 = parseFloat(n1); //converte para número com casas decimais
+
+        n2 = parseFloat(prompt("Digite outro número"));
+        console.log("Resultado: " + (n1+n2).toFixed(2));
+        console.log(`Subtração = ${(n1-n2).toFixed(2)}`);
+
+    </script>
+</head>
+<body class="vsc-initialized">
+    
+
+</body></html>
