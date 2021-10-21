@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- saved from url=(0211)https://alt-5d152e0e8981d.blackboard.com/bbcswebdav/pid-10148230-dt-content-rid-132992089_1/courses/1465375/exemplo02%282%29.html?one_hash=918BFB12A081FBB20AC9AA2C50DE9404&f_hash=F173F8626D13385934A72CE4808C5E4E -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02 - JS</title>
+    <script>
+        "use strict";
+        let data, hora, minutos;
+        //cria um objeto do Date - data completa
+        data = new Date();
+        document.write(`<h2> ${data} </h2>`);
+        //getHours = método de acesso que retorna o valor da hora
+        hora = data.getHours();
+        minutos = data.getMinutes();
+        if (hora >= 18) { //condicional simples (sem o else)
+            document.write(`Boa noite, são: ${hora}:${minutos}`);
+        }
+        document.write(`<h1>Palmeiras não tem mundial!</h1>`);
+    </script></head><body class="vsc-initialized"><h2> Wed Oct 20 2021 22:39:53 GMT-0300 (Horário Padrão de Brasília) </h2>Boa noite, são: 22:39<h1>Palmeiras não tem mundial!</h1>
+
+
+    
+
+</body></html>

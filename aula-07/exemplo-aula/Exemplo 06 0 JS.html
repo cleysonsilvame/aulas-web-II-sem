@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0204)https://alt-5d152e0e8981d.blackboard.com/bbcswebdav/pid-10148230-dt-content-rid-132992093_1/courses/1465375/exemplo06.html?one_hash=10D0CDE717CB69A12C0C920BD5578C02&f_hash=F173F8626D13385934A72CE4808C5E4E -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 06 0 JS</title>
+    <script>
+        "use strict";
+        let data, semana;
+        data = new Date();
+        semana = data.getDay(); //retorna o dia da semana (0 = domingo, 1 = segunda, .....)
+        
+        switch(semana){
+            case 0:
+                console.log("Domingo de descanso");
+                break;
+            case 3:
+                console.log("Programação web");
+                break;
+            case 6: 
+                console.log("Sábado!!!!!");
+                break;
+            default:
+                console.log("Semana longa");
+        }
+        console.log("Palmeiras não tem mundial");
+    </script>
+</head>
+<body class="vsc-initialized">
+    
+
+</body></html>

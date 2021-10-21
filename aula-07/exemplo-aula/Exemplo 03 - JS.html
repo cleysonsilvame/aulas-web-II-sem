@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0211)https://alt-5d152e0e8981d.blackboard.com/bbcswebdav/pid-10148230-dt-content-rid-132992090_1/courses/1465375/exemplo03%281%29.html?one_hash=4C5553355F43E67CC5AFACEA4F373121&f_hash=F173F8626D13385934A72CE4808C5E4E -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03 - JS</title>
+    <script>
+        "use strict";
+        let data, mes;
+        data = new Date();
+        mes = data.getMonth(); //retorna o número do mês - 0: Jan, 1: Fev...
+        document.write(`Mês: ${mes}`);
+        if(mes <= 5){ //condicional composto
+            //bloco verdadeiro
+            document.write(`<h1> Primeiro semestre do ano </h1>`);
+        }
+        else{ 
+            //bloco falso
+            document.write(`<h1> Segundo semestre do ano </h1>`);
+        }
+        document.write(`<h1> Palmeiras não tem mundial </h1>`);
+    </script></head><body class="vsc-initialized"><text>Mês: 9</text><h1> Segundo semestre do ano </h1><h1> Palmeiras não tem mundial </h1>
+
+
+    
+
+</body></html>

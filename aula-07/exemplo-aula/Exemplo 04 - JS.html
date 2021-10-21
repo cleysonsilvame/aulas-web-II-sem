@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0204)https://alt-5d152e0e8981d.blackboard.com/bbcswebdav/pid-10148230-dt-content-rid-132992091_1/courses/1465375/exemplo04.html?one_hash=4B084001066941C17205600F245F7B27&f_hash=F173F8626D13385934A72CE4808C5E4E -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 04 - JS</title>
+    <script>
+        "use strict";
+        let hora, data;
+        data = new Date();
+        hora = data.getHours();
+        //hora = Number(prompt("Digite o valor da hora"));
+        if (hora >= 0 && hora < 12){
+            document.write(`<h2> Bom dia!!!! </h2>`);
+        }else{
+            if (hora <= 18){
+                document.write(`<h2> Boa tarde!!!! </h2>`);
+            }
+            else{
+                document.write(`<h2> Boa noite!!!! </h2>`);
+            }
+        }
+        document.write(`<h2> Palmeiras não tem mundial </h2>`);
+    </script></head><body class="vsc-initialized"><h2> Boa noite!!!! </h2><h2> Palmeiras não tem mundial </h2>
+
+
+    
+
+</body></html>
