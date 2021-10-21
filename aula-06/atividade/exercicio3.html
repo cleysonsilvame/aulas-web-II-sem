@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 03</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28pt;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      const valorA = parseFloat(prompt("Digite o valor de A"));
+      const valorB = parseFloat(prompt("Digite o valor de B"));
+      const valorC = parseFloat(prompt("Digite o valor de C"));
+
+      const delta = valorB * valorB - 4 * valorA * valorC;
+
+      const x1 = ((-valorB + Math.sqrt(delta)) / 2) * valorA;
+      const x2 = ((-valorB - Math.sqrt(delta)) / 2) * valorA;
+
+      document.write("O valor de x1: " + x1);
+      document.write("</br>");
+      document.write("O valor de x2: " + x2);
+    </script>
+  </body>
+</html>
