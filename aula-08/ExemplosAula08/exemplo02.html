@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02 - Arrow Function</title>
+</head>
+<body>
+    <h2>JS com Arrow Function</h2>
+    <script>
+        "use strict";
+        //definicão das funções
+        //com apenas 1 instrução - não precisa de {}
+        let media = (v1,v2,v3) => (v1+v2+v3)/3;
+        //com 1 instrução, com a utilização {}
+        let produto = (v1,v2) => {
+            return (v1*v2);
+        }
+        //função seta sem parametros
+        let mensagem = () => "Boa noite";
+
+        //executando as funções
+        let v1,v2,v3;
+        v1 = Number(prompt("Digite o primeiro número"));
+        v2 = Number(prompt("Digite o segundo número"));
+        v3 = Number(prompt("Digite o terceiro número"));
+        document.write(`<h3>${mensagem()}</h3>`);
+        document.write(`<p>Média = ${media(v1,v2,v3).toFixed(2)}</p>`);
+        document.write(`<p>Produto = ${produto(v1,v2).toFixed(2)}</p>`);
+    </script>
+</body>
+</html>
