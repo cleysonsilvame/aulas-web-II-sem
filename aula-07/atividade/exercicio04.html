@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 04</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28pt;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      const alturaDegrau = parseFloat(
+        prompt("Digite a altura do degrau em metros")
+      );
+      const alturaEscada = parseFloat(
+        prompt("Digite a altura da escada em metros")
+      );
+
+      const totalDeDegraus = alturaEscada / alturaDegrau;
+
+      document.write(
+        `<p>O número de degraus necessário é: ${totalDeDegraus}</p>`
+      );
+    </script>
+  </body>
+</html>

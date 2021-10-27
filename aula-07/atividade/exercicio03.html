@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 03</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28pt;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      const nome = prompt("Digite o nome da pessoa");
+      const anoNasc = parseInt(prompt("Digite o ano de nascimento"));
+      const anoAtual = parseInt(prompt("Digite o ano atual"));
+
+      const idade = anoAtual - anoNasc;
+
+      document.write(`<p>O nome é: ${nome}</p>`);
+      document.write(`<p>Sua idade é: ${idade}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 07</title>
+    <style>
+      td:nth-child(odd) {
+        background: yellow;
+      }
+      td:nth-child(even) {
+        background: rgb(8, 204, 8);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tbody></tbody>
+    </table>
+    <script>
+      "use strict";
+
+      const tBody = document.querySelector("tbody");
+
+      const linhas = Number(prompt("Quantas linhas deseja inserir?"));
+      const colunas = Number(prompt("Quantas colunas deseja inserir?"));
+
+      for (let linha = 0; linha < linhas; linha++) {
+        const tr = document.createElement("tr");
+
+        for (let coluna = 0; coluna < colunas; coluna++) {
+          const td = document.createElement("td");
+
+          td.innerText = `${linha + 1},${coluna + 1}`;
+          tr.appendChild(td);
+        }
+        tBody.appendChild(tr);
+      }
+    </script>
+  </body>
+</html>
