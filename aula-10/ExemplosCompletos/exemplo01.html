@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo 01 - map e forEach</title>
+    <meta charset="UTF-8">
+    <script>
+        "use strict";
+        window.addEventListener("load", function(){
+            let paises = ["México", "Brasil", "Itália", "Espanha", "Argentina", "Chile"];
+            let numeros = [2, 1, 9, 7, 4];
+            //concat = concatena os vetores
+            let resultado = paises.concat(numeros); 
+            document.querySelector("#res").innerHTML = resultado;
+            //sort = ordena os elementos do vetor
+            let ordenado = numeros.sort();
+            document.querySelector("#res").innerHTML += "<br>Ordenado: "+ ordenado;
+            document.querySelector("#res").innerHTML += "<br>Ordenado: "+ paises.sort();
+
+            //função map
+            let resp = paises.map((item) => {
+                return item.length; //qtde de caracteres para cada elemento do vetor
+            });
+            document.querySelector("#res").innerHTML += "<h2> Função Map </h2>"
+            document.querySelector("#res").innerHTML += paises;
+            document.querySelector("#res").innerHTML += "<br>" + resp;
+
+            //função forEach
+            document.querySelector("#res").innerHTML += "<h2> Função forEach </h2>"
+            paises.forEach((item, index)=> {
+                document.querySelector("#res").innerHTML += `Pais: ${item} - Índice: ${index} <br>`;
+            })
+        })
+            
+
+            
+    </script>
+</head>
+
+<body>
+    <article id="res"></article>
+</body></html>
