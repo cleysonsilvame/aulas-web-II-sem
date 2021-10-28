@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        let linha, coluna, texto="";
+        texto = "<table border='1'>"; //abre tabela
+        linha = Number(prompt("Digite a quantidade de linhas"));
+        coluna = Number(prompt("Digite a quantidade de colunas"));
+        for(let i = 1; i<=linha; i++){
+            texto = texto + "<tr>"; //cria uma linha
+            for(let j = 1; j<=coluna; j++){
+                texto = texto + "<td>" + i + "-" + j + "</td>"; //cria as colunas
+            }
+            texto = texto + "</tr>";
+        }
+        texto += "</table>"; //fecha tabela
+        document.write(texto);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

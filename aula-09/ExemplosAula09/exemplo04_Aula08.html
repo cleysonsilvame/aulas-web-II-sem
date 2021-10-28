@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com formulário</title>
+    <style>
+        input, label, button{
+            margin: 5px;
+        }
+        label{
+            font-weight: 900;
+        }
+        article{
+            background-color: lightblue;
+            width: 300px;
+        }
+    </style>
+    <script>
+        "use strict";
+        //DOM - Modelo que possibilita o acesso aos HTML via JS
+        window.addEventListener("load", function(){ //load evento de carregamento de página
+            let btn = document.getElementById("soma");
+            //armazena o objeto soma a variável btn
+            btn.addEventListener("click", function(){
+                //associar o evento click a este elemento (btn)
+                let n1, n2, resultado;
+                //receber os valores digitados no formulário
+                n1 = document.getElementById("valor1").value;
+                //obtem o valor digitado no campo de texto
+                n2 = document.getElementById("valor2").value;
+                resultado = Number(n1) + Number(n2);
+                //escrevendo em um elemento de formulário (value)
+                document.getElementById("resul").value = resultado;
+                //escrevendo em um elemento html
+                let conteudo = document.getElementById("texto").innerHTML;
+                document.getElementById("texto").innerHTML = conteudo + "<br>"+ resultado;
+                //document.getElementById("texto").innerHTML += "<br>" +resultado;
+            });
+    });
+    </script>
+</head>
+<body>
+    <h2>Exemplo 04 - Soma de valores</h2>
+    <form name="exemplo" method="POST" action="">
+        <label>Valor 1:</label>
+        <input type="text" id="valor1" name="valor1">
+        <br>
+        <!--campo de entrada de dados-->
+        <label>Valor 2:</label>
+        <input type="text" id="valor2" name="valor2">
+        <br>
+        <label>Resultado:</label>
+        <input type="text" id="resul" name="resul" readonly>
+        <br>
+        <button type="button" id="soma">Somar</button>
+    </form>
+    <article id="texto">Resultado: </article>
+</body>
+</html>

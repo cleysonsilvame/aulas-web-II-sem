@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02 - Vetor</title>
+    <script>
+        "use strict";
+        let numeros=[];
+        let i, soma=0, media, qtde = 0;
+        //soma = acumulador (somatória dos valores digitados)
+        //qtde = contador (números acima da média)
+        for (i=0; i<10; i++){
+            numeros[i] = Number(prompt("Digite um número"));
+            soma = soma + numeros[i]; //acumula
+            //soma += numeros[i];
+        }
+        media = soma/i;
+        document.write(`Média = ${media}`);
+        //percorrer o vetor para contar qtos valores estão acima da média
+        for(i=0; i<10; i++){
+            if(numeros[i] > media){
+                qtde++;
+            }
+        }
+        document.write(`<br>Números: ${numeros}` );
+        document.write(`<br>Tamanho do vetor: ${numeros.length}` );
+        document.write(`<br>Acima da média: ${qtde}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
