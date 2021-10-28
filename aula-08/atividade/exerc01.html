@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 01</title>
+  </head>
+  <body>
+    <form action="">
+      <h2>Calculo do Imposto de Renda</h2>
+      <p>
+        <label for="registro">Registro:</label>
+        <input
+          type="text"
+          name="registro"
+          id="registro"
+          placeholder="20391293021"
+        />
+      </p>
+      <p>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Maria" />
+      </p>
+      <p>
+        <label for="salario">Salário:</label>
+        <input
+          type="number"
+          name="salario"
+          id="salario"
+          placeholder="1434,34"
+          min="0"
+        />
+      </p>
+      <button id="button" type="button">Calcular IR</button>
+    </form>
+    <p>
+      <label for="imposto">Imposto de Renda:</label>
+      <input type="number" name="imposto" id="imposto" readonly />
+    </p>
+
+    <script>
+      "use strict";
+      window.addEventListener("load", () => {
+        const button = document.querySelector("#button");
+        const inputSalario = document.querySelector("#salario");
+        const inputImposto = document.querySelector("#imposto");
+
+        button.addEventListener("click", () => {
+          const salario = Number(inputSalario.value);
+          let aliquota;
+
+          if (salario <= 1434) {
+            aliquota = 0;
+          } else if (salario <= 2150) {
+            aliquota = 7.5;
+          } else if (salario <= 2866) {
+            aliquota = 15;
+          } else if (salario <= 3582) {
+            aliquota = 22.5;
+          } else {
+            aliquota = 27.5;
+          }
+
+          inputImposto.value = calcularImposto(salario, aliquota);
+        });
+
+        function calcularImposto(salario, aliquota) {
+          return salario * (aliquota / 100);
+        }
+      });
+    </script>
+  </body>
+</html>

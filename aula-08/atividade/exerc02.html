@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 02</title>
+  </head>
+  <body>
+    <form action="">
+      <h2>Calculadora</h2>
+      <label for="n1">Primeiro número:</label></br>
+      <input type="number" name="n1" id="n1" /></br>
+      <label for="n2">Segundo número:</label></br>
+      <input type="number" name="n2" id="n2" /></br>
+
+      <button id="soma" type="button">+</button>
+      <button id="subtracao" type="button">-</button>
+      <button id="multiplicacao" type="button">*</button>
+      <button id="divisao" type="button">/</button>
+    </form>
+    <p>
+      <label for="resultado">Resultado:</label>
+      <input type="number" name="resultado" id="resultado" readonly />
+    </p>
+
+    <script>
+      "use strict";
+      window.addEventListener("load", () => {
+        const btnSoma = document.querySelector("#soma");
+        const btnSubtracao = document.querySelector("#subtracao");
+        const btnMultiplicacao = document.querySelector("#multiplicacao");
+        const btnDivisao = document.querySelector("#divisao");
+
+        const n1 = document.querySelector("#n1");
+        const n2 = document.querySelector("#n2");
+
+        const inputResultado = document.querySelector("#resultado");
+
+        btnSoma.addEventListener("click", () => {
+          inputResultado.value = Number(n1.value) + Number(n2.value);
+        });
+
+        btnSubtracao.addEventListener("click", () => {
+          inputResultado.value = Number(n1.value) - Number(n2.value);
+        });
+
+        btnMultiplicacao.addEventListener("click", () => {
+          inputResultado.value = Number(n1.value) * Number(n2.value);
+        });
+
+        btnDivisao.addEventListener("click", () => {
+          inputResultado.value = Number(n1.value) / Number(n2.value);
+        });
+      });
+    </script>
+  </body>
+</html>
