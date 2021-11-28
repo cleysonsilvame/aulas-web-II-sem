@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-min.js"></script>
+    <script>
+        //após o carregamento da página os elementos podem ser acessados
+        "use strict";
+        $(function(){ //carregamento de págino no JQuery
+            $("p").html("Mudando o texto"); //html altera o conteúdo da tag
+            $("#artigo").css("color","blue"); //altera a propriedade css
+            $(".caixa").hide();//hide() = esconde o elemento
+        })
+    </script>
+</head>
+<body>
+    <p>Acesso a tag</p>
+    <article id="artigo">Acesso pelo id</article>
+    <section class="caixa">Acesso pelo class</section>
+</body>
+</html>
