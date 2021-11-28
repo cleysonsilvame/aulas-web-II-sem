@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <opcao id="1">Empresa</opcao>
+    <opcao id="2">Produtos</opcao>
+    <opcao id="3">Localização</opcao>
+    <opcao id="4">Chat</opcao>
+</menu>
