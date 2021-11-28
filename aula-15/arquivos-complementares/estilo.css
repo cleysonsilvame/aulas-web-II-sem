@@ -1,0 +1,17 @@
+body{
+    font-family: verdana;
+    font-size: 10pt;
+     line-height: 30pt;   
+}
+.cabecalho{
+    background-color: #68cffd;
+    font-weight: bold;
+    text-align: center;
+}
+
+.linhas_p{
+    background-color: #f8f850;
+}
+.linhas_i{
+     background-color: #fccd31;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webtv>
+	<canal>
+		<numero>5</numero>
+		<tipo>Aberto</tipo>
+		<titulo>Notícias do Mundo</titulo>
+		<descricao>Programação variada durante o dia inteiro.</descricao>
+		<data_programa>28/11/2021</data_programa>
+		<hora_programa>00:00 - 23:59</hora_programa>
+		<link>http://webtv.com/canal.php?num=5</link>
+	</canal>
+	
+	<canal>
+		<numero>10</numero>
+		<tipo>Fechado</tipo>
+		<titulo>Desenhos</titulo>
+		<descricao>Programação infantil.</descricao>
+		<data_programa>15/11/2021</data_programa>
+		<hora_programa>00:00 - 20:00</hora_programa>
+		<link>http://webtv.com/canal.php?num=10</link>	    
+    </canal>
+	
+	<canal>
+		<numero>15</numero>
+		<tipo>Fechado</tipo>
+		<titulo>Filmes</titulo>
+		<descricao>Programação especial de lançamento de filmes.</descricao>
+		<data_programa>08/12/2014</data_programa>
+		<hora_programa>14:00 - 23:00</hora_programa>
+		<link>http://webtv.com/canal.php?num=15</link>
+	</canal>
+</webtv>
