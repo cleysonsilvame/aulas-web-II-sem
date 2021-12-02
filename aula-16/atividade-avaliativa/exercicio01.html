@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 01</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;
+      }
+      table {
+        margin-top: 10px;
+        border-collapse: collapse;
+        width: 30rem;
+      }
+
+      td,
+      th {
+        vertical-align: middle;
+        border-style: ridge;
+        border-width: 2px;
+        font-size: small;
+        height: 24px;
+        padding: 0 5px 0 5px;
+      }
+      th {
+        text-align: right;
+        width: 28%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Formulário de Cadastro</h1>
+
+      <label for="numeroDeSerie">Número de série: </label>
+      <input type="number" name="numeroDeSerie" id="numeroDeSerie" />
+      <br />
+
+      <label for="nomeDoCliente">Nome do cliente:</label>
+      <input type="text" name="nomeDoCliente" id="nomeDoCliente" />
+      <br />
+
+      <label for="dataDoAluguel">Data do aluguel:</label>
+      <input type="text" name="dataDoAluguel" id="dataDoAluguel" />
+      <br />
+
+      <label for="valorDoAluguel">Valor do aluguel:</label>
+      <input type="number" name="valorDoAluguel" id="valorDoAluguel" />
+      <br />
+
+      <button type="button" id="exibir">Exibir</button>
+      <button type="button" id="limpar">Limpar</button>
+    </form>
+
+    <main></main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/exercicio01.js"></script>
+  </body>
+</html>

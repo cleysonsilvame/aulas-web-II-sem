@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 02</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;
+      }
+      h3:nth-of-type(2){
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Dados da venda:</h1>
+      <h3>
+        <label for="total">Total:</label>
+        <input type="number" name="total" id="total" />
+      </h3>
+      <h3>
+        <label for="total">Forma de pagamento:</label>
+      </h3>
+      <input type="radio" name="pagamento" id="aVista" value="10" />
+      <label for="aVista">À vista - 10% de desconto</label>
+      <br />
+
+      <input type="radio" name="pagamento" id="debito" value="7" />
+      <label for="debito">Débito - 7% de desconto</label>
+      <br />
+
+      <input type="radio" name="pagamento" id="credito" value="0" />
+      <label for="credito">Crédito - 10% de desconto</label>
+      <br />
+
+      <button type="button" id="calcular">Calcular</button>
+    </form>
+
+    <main>
+      <h3>
+        <label for="valorAPagar">Valor a pagar:</label>
+        <input type="number" name="valorAPagar" id="valorAPagar" readonly />
+      </h3>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/exercicio02.js"></script>
+  </body>
+</html>
